@@ -63,13 +63,11 @@ def count_x_mas(filename):
             if grid[r][c] != 'A':
                 continue
 
-
             found = False
             for mas1_rev in [False, True]:
                 for mas2_rev in [False, True]:
                     mas1 = ""
                     mas2 = ""
-
 
                     chars1 = [grid[r - 1][c - 1], grid[r][c], grid[r + 1][c + 1]]
                     if mas1_rev:
@@ -90,8 +88,6 @@ def count_x_mas(filename):
                     break
 
     return count
-
-
 
 
 # Example usage
